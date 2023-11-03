@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Inscripción a los cursos - El Taller</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header-ceramica">
+        <div class="logo-nombre">
+            <div class="logo">
+                <img src="img/favicon-32x32.png" alt="El Taller">
+            </div>
+            <div class="nombre">
+                <a href="index.html">el taller</a>
+            </div>
+        </div>
+        <nav>
+            <ul class="menu-ceramica">
+                <li><a href="que-es-la-ceramica.html">Cerámica</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="inscripcion-cursos.html">Inscripción</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="contenido-inscripcion">
+        <h1>Inscripción a los cursos</h1>
+        <p>Los campos marcados con * son obligatorios</p>
+    </section>
+
+
+    <section class="formulario">
+        <form action="#" method="POST">
+
+            <fieldset class="detalles">
+                <legend>Detalles de la inscripción</legend>
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div>
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" id="apellidos" name="apellidos" required>
+                </div>
+                <div>
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+                <div>
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+                <div>
+                    <label for="fecha-nacimiento">Fecha de nacimiento</label>
+                    <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+                </div>
+                <div>
+                    <label for="curso">Curso</label>
+                    <select id="curso" name="curso" required>
+                        <option value="">Seleccionar curso</option>
+                        <option value="torno">Torno</option>
+                        <option value="ceramica">Cerámica</option>
+                        <option value="moldeado">Moldeado</option>
+                        <option value="esmaltes">Esmaltes</option>
+                        <option value="joyeria">Joyería cerámica</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset class="otras">
+                <legend>Otras informaciones</legend>
+                <fieldset>
+                    <legend required>¿Has hecho otros cursos con nosotros?*</legend>
+                    <div>
+                        <input type="radio" id="si-cursos" name="cursos" required>
+                        <label for="si-cursos">Sí</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="no-cursos" name="cursos" required>
+                        <label for="no-cursos">No</label>
+                    </div>
+                </fieldset>
+                <p>¿Quieres comentar o preguntar algo?</p>
+                <div>
+                    <textarea id="comentarios" name="comentarios" cols="30" rows="10"></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset class="pago">
+                <legend required>Elige un método de pago*</legend>
+
+                    <div>
+                        <input type="radio" id="transferencia" name="metodo-pago" required>
+                        <label for="transferencia">Transferencia</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="tarjeta" name="metodo-pago" required>
+                        <label for="tarjeta">Tarjeta de débido / crédito</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="efectivo" name="metodo-pago" required>
+                        <label for="efectivo">En efectivo</label>
+                    </div>
+            </fieldset>
+        </form>
+    </section>
+    
+    <section class="proteccion-datos">
+        <p>INFORMACIÓN SOBRE PROTECCIÓN DE DATOS DE <strong>EL TALLER</strong>. <strong>Finalidades</strong>: recogida de datos para la inscripción como socio del interesado. <strong>Legitimación</strong>: Consentimiento del interesado. <strong>Destinatarios</strong>: No están previstas cesiones de datos a terceros, excepto obligación legal. <strong>Derechos</strong>: Puede retirar su consentimiento en cualquier momento, así como acceder, rectificar, suprimir sus datos y otros <strong>derechos</strong> dirigiéndose a <a href="mailto:info@eltaller.es">info@eltaller.es</a>. <strong>Información Adicional</strong>: Puede ampliar la información en el <a href="">enlace</a> de <a href="">Aviso Legal</a> y <a href="">Política de privacidad</a>.</p>            
+        <input type="checkbox" id="checkbox" name="checkbox" required>
+        <label for="checkbox">He leído y acepto la <a href="">política de privacidad</a> </label>
+        </div>
+        <div>
+            <input type="submit" value="INSCRÍBEME" class="submit-btn" />
+        </div>       
+    </form>
+    </section>
+
+
+    <footer class="footer-ceramica">
+        <ul class="menu-pie-ceramica">
+            <li><a href="#">Aviso legal</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Política de cookies</a></li>
+        </ul>
+        <p> 2023 &copy; Neus Piqueres Giménez</p>
+    </footer>
+
+</body>
+
+</html>
